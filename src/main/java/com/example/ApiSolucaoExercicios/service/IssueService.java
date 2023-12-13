@@ -12,7 +12,7 @@ public class IssueService {
 
     private Map<String, SolveInterface> solves = Map.of(
             "stringWithoutLetter", new StringWithoutLetter(),
-            "StairCase", new MiniMaxSum()
+            "MiniMaxSum", new MiniMaxSum()
     );
 
     public ResponseEntity resolve(String issueName, Map<String,String> allRequestParams) {

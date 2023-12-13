@@ -21,7 +21,9 @@ public class MiniMaxSum implements SolveInterface<String> {
         long secondResult = 0;
         for (int i = 0; i < 4; i++) {
             firstResult += arr.get(i);
-            secondResult += arr.get(i + 1);
+        }
+        for (int j = 1; j < arr.size(); j++) {
+            secondResult += arr.get(j);
         }
         return firstResult + " " + secondResult;
     }
